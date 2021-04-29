@@ -1,0 +1,68 @@
+.bookmarks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ratings {
+  display: flex;
+  justify: space-between;
+
+  h2 {
+    padding-left: 8px;
+  }
+
+  i {
+    color: yellow;
+  }
+}
+
+
+
+.bookmark {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 50px;
+  width: fit-content;
+}
+
+.bookmark > img {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.bookmark h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.bookmark p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.bookmark .bookmark-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.bookmark-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+
+  h5 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}

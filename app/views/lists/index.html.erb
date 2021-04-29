@@ -1,6 +1,19 @@
-<h1>My Lists</h1>
-<% @lists.each do |list| %>
-<h2 class="card"> <%= list.name %> </h2>
-<% end %>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)">
+  <div class="container">
+    <h1>Create your custom movie Lists !</h1>
+  </div>
+</div>
 
-<%= link_to "Create a new List", new_list_path %>
+<div class="nav-lists">
+  <h2>My Lists</h2>
+  <%= link_to "Create a new List", new_list_path, class: "btn btn-success btn-lg" %>
+</div>
+<div class="lists">
+  <% @lists.each do |list| %>
+    <%= link_to list_path(list) do %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.pexels.com/photos/2398354/pexels-photo-2398354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)">
+        <%= list.name %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
