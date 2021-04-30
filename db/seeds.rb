@@ -24,15 +24,3 @@ movies['results'].each do |movie|
     poster_url: "https://image.tmdb.org/t/p/w500/#{movie['poster_path']}"
   )
 end
-
-List.create!(name: 'My favorites')
-List.create!(name: 'Drama')
-List.create!(name: 'Comedy')
-
-3.times do
-  Bookmark.create!(
-    comment: 'A voir',
-    movie: Movie.all.sample,
-    list: List.all.sample
-  )
-end
