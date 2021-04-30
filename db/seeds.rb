@@ -6,10 +6,11 @@ require 'open-uri'
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Bookmark.destroy_all
-List.destroy_all
-Movie.destroy_all
-
+if Rails.env.development?
+  Bookmark.destroy_all
+  List.destroy_all
+  Movie.destroy_all
+end
 url = 'http://tmdb.lewagon.com/movie/top_rated'
 
 opened_url = open(url).read
