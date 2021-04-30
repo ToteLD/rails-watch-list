@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "app_id": "app_1f776eb3-23ea-4630-a3cc-ffb88c99bd1d",
+      "org_id": "user_d7573f5f-10f2-4b0a-a615-d3701415a399",
+      "deploy_url": "https://push-n2-par-clevercloud-customers.services.clever-cloud.com/app_1f776eb3-23ea-4630-a3cc-ffb88c99bd1d.git",
+      "name": "custom-watch-lists",
+      "alias": "custom-watch-lists"
+    }
+  ]
+}
